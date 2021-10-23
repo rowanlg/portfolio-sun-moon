@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { animated, useSpring } from "react-spring"
 import styled from "styled-components"
-import Boop from "./boop"
+import Boop from "./Boop"
 import Day from "../assets/images/day.jpg"
 import Night from "../assets/images/night.jpg"
 

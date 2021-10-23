@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: Montserrat;
     overflow-x: hidden;
+    transition: all 1s ease;
     p {
     }
   }

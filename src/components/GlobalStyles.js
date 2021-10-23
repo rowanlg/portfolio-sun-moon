@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     font-family: Montserrat;
+    overflow-x: hidden;
     p {
     }
   }

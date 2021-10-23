@@ -41,6 +41,35 @@ const NavBarHeader = styled.header`
         background-color: ${({ theme }) => theme.pink};
       }
     }
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+  }
+  .desktop-menu-links {
+    display: none;
+    a {
+      text-decoration: none;
+      color: ${({ theme }) => theme.text};
+      margin-left: 2rem;
+    }
+    a:nth-child(1) {
+      :hover {
+        color: ${({ theme }) => theme.blue};
+      }
+    }
+    a:nth-child(2) {
+      :hover {
+        color: ${({ theme }) => theme.yellow};
+      }
+    }
+    a:nth-child(3) {
+      :hover {
+        color: ${({ theme }) => theme.pink};
+      }
+    }
+    @media screen and (min-width: 1000px) {
+      display: flex;
+    }
   }
 `
 
@@ -58,6 +87,11 @@ const Navbar = () => {
         <div />
         <div style={{ backgroundColor: ({ theme }) => theme.pink }} />
         <div />
+      </div>
+      <div className="desktop-menu-links">
+        <Link to="/">work</Link>
+        <a href="/">about</a>
+        <a href="/">contact</a>
       </div>
     </NavBarHeader>
   )
